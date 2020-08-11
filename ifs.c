@@ -9,12 +9,15 @@ int main(int argc, char const *argv[])
     printf("Enter number 2: ");
     scanf("%d", &number_2);
 
-    if ( number_1 > number_2)
-        printf("The number 1: %d is bigger than the number 2: %d", number_1,  number_2);
-    else if (number_1 < number_2)
+    if ( number_1 > number_2 || number_1 == number_2 && number_1+number_2 != 0)
+        printf("The number 1: %d is bigger or equal to the number 2: %d", number_1,  number_2);
+    else if (number_1 < number_2 && number_1+number_2 != 0)
         printf("The number 1: %d is smaller than the number 2: %d", number_1,  number_2);
+    else if (number_1 == 0 && number_2 == 0)
+        printf("The number 1 and the number 2 are both %d", number_1);
     else
-        printf("The number 1: %d is equal to the number 2: %d", number_1,  number_2);
+        printf("Somthing went wrong, please enter a integer number");
+    
 
     
 
