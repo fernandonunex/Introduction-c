@@ -1,17 +1,19 @@
 #include<stdio.h>
 
-void demo(int a, int b);
+void demo();
 
 int main()
 {
-    demo(100,800);
+    demo();
     return 0;
 }
 
 
-void demo(int a, int b)
+void demo()
 {
-    int sum;
+    int a,b,sum;
+    a = 100;
+    b = 400;
     sum = a+b;
     printf("The result is: %d", sum);
     
