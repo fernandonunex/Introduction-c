@@ -1,20 +1,21 @@
 #include<stdio.h>
 
-void demo();
+int demo();
 
 int main()
 {
-    demo();
+    
+    printf("The result is: %d",demo());
     return 0;
 }
 
 
-void demo()
+int demo()
 {
     int a,b,sum;
     a = 100;
-    b = 400;
+    b = 480;
     sum = a+b;
-    printf("The result is: %d", sum);
-    
+    // printf("The result is: %d", sum);
+    return sum;
 }
