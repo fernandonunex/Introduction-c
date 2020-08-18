@@ -10,9 +10,7 @@ int main(int argc, char const *argv[])
     {
         printf("n = %d The result is: %d \n",i, squared(2,i));
     }
-
     printf("The result is: %d \n",squared(5,2));
-
     return 0;
 }
 
@@ -24,6 +22,8 @@ int squared(int n, int m)
     for ( i = 1; i <= m; i++)
     {
         p = p * n;
+        printf("The value of m is: %d\n",m);
+
     }
     return p;
 }
