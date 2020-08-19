@@ -1,13 +1,15 @@
 #include<time.h>
 #include<stdlib.h>
 
-time_t seconds;
+time_t begin, end;
 
 int main()
 {
     
-
-    seconds = time(NULL);
-    printf("The number of hours since EPOC 1st of January of 1970 at 00:00 is: %ld \n", seconds/3600 );
+    long i;
+    begin = time(NULL);
+    for ( i = 0; i < 1000000000; i++);
+    end = time(NULL);
+    printf("The time of execution is: %f \n",difftime(end,begin) );
     return 0;
 }
